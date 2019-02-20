@@ -8,6 +8,7 @@ const ui = new UI();
 
 const searchUser = document.getElementById('searchUser');
 
+
 //Search input event listener
 searchUser.addEventListener('keyup', (e) => {
     //Get input text
@@ -22,8 +23,8 @@ searchUser.addEventListener('keyup', (e) => {
 
             } else {
                 //show profile
-               
                 ui.showProfile(data.profile);
+                ui.showRepos(data.repos);
 
             } 
         })
